@@ -1040,3 +1040,8 @@ section {
   .credits a:hover {
     color: #fff;
   }
+
+  .img-fluid {
+    width: 420px;
+    height: 488px;
+  }

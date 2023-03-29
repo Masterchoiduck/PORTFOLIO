@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Angel In Us</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <!-- Demo styles -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+      @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      /* Animation keyframe */
+      @keyframes fadeInDown{ 
+        0%{ 
+          opacity: 0;
+          transform: translate3d(0,-30px,0);
+        }
+        100%{ 
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+      }
+      @keyframes fadeInUp{ 
+        0%{ 
+          opacity: 0;
+          transform: translate3d(0,30px,0);
+        }
+        100%{
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+      }
+
+      /*스와이퍼 css*/
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+        
+        
+      }
+      /*스와이프 페이징버튼 색상 */
+      :root {
+        --swiper-theme-color: #D80000;
+      } 
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /*회사소개 페이지 0~3*/
+      .slide1 { 
+        display:table-cell;
+        background: url("Project/회사소개1번.png");
+        background-repeat: no-repeat;
+        color:#868686;
+        background-size: cover;
+        background-position: center center;
+        
+      }
+      .slide2 { 
+        display: table-cell;
+        background: url("project/회사소개2번.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .slide3 { 
+        display: table-cell;
+        background: url("project/회사소개3번자른버전.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .slide4 { 
+        display: table-cell;
+        background: url("project/회사소개4번.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /*애니메이션 페이징*/
+      .page0h3{
+
+        
+        color:#fff;
+        text-align: center; 
+        font-size: 24px;
+        font-weight: 500;
+        margin:0 auto;
+        line-height: 30px;
+        height: 30px;
+        width: 900px;
+        margin-top: 300px;
+        
+        
+      }
+      .page0h1{
+
+
+        color:#fff;
+        text-align: center;
+        width:900px;
+        line-height: 150px;
+        font-size: 56px;
+        font-weight: 600;
+        margin:0 auto;
+        
+        
+      }
+      
+      .page0h2{
+
+        color:#fff;
+        text-align: center;
+        width:900px;
+        font-size:22px;
+        margin:0 auto;
+        line-height: 30px;
+        font-weight: 300;
+        font-family: 'Do Hyeon', sans-serif;
+
+      }
+      .page1h3{ 
+        
+
+       color:#fff;
+       text-align: center;
+       height:30px;
+       width:900px;
+       line-height: 30px;
+       font-size: 24px;
+       font-weight: 500;
+       margin:0 auto;
+       margin-top: 300px;
+      }
+      .page1h1{ 
+       
+
+        color:#fff;
+        text-align: center;
+        width:900px;
+        line-height: 150px;
+        font-size: 56px;
+        font-weight: 600;
+        margin: 0 auto;
+      }
+      .page1h2{ 
+       
+
+        color:#fff;
+        text-align: center;
+        width:900px; 
+        font-size:22px;
+        line-height:30px;
+        font-weight: 300;
+        margin: 0 auto;
+        font-family: 'Do Hyeon', sans-serif;
+      }
+      .page2h3{ 
+        
+        
+        color:#fff;
+        text-align: center;
+        width:900px;
+        font-size:24px;
+        line-height: 30px;
+        font-weight: 500;
+        height:30px;
+        margin:0 auto;
+        margin-top: 300px;
+        
+      }
+      .page2h1{
+       
+
+        color:#fff;
+        text-align: center;
+        width: 900px;
+        font-size:56px;
+        font-weight: 600;
+        line-height: 150px;
+        margin: 0 auto;
+
+      }
+      .page2h2{ 
+      
+      
+
+
+        color:#fff;
+        text-align: center;
+        width:900px;
+        font-size:22px;
+        font-weight: 300;
+        margin: 0 auto;
+        line-height: 30px;
+        font-family: 'Do Hyeon', sans-serif;
+      }
+      .page3h3{ 
+        width:900px;
+        margin:0 auto;
+        line-height: 30px;
+        height: 30px;
+        font-size: 24px;
+        font-weight: 1000;
+        color:#fff;
+        padding:0;
+        margin-top:150px
+      }
+      .page3h1{ 
+        color:#fff;
+        width:900px;
+        margin: 0 auto;
+        height: auto;
+        line-height: 65px;
+        font-size: 56px;
+        font-weight: 600;
+        padding:30px 0;
+      }
+      #map{ 
+        width:1200px;
+        height:600px;
+        margin: 0 auto;     
+      }
+      .eventFadeindown{ 
+        -webkit-animation: fadeInDown 1s ease-in-out both;
+        -moz-animation: fadeInDown 1s ease-in-out both;
+        -ms-animation: fadeInDown 1s ease-in-out both;
+        animation: fadeInDown 1s ease-in-out both;
+        -webkit-animation-delay: .5s;
+        -moz-animation-delay: .5s;
+        -ms-animation-delay: .5s;
+        animation-delay: .5s;
+      }
+
+      .eventFadeinup{
+        -webkit-animation: fadeInUp 1s ease-in-out both;
+        -moz-animation: fadeInUp 1s ease-in-out both;
+        -ms-animation: fadeInUp 1s ease-in-out both;
+        animation: fadeInUp 1.2s ease-in-out both;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -ms-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+      .eventFadeinup2{ 
+        -webkit-animation: fadeInUp 1s ease-in-out both;
+        -moz-animation: fadeInUp 1s ease-in-out both;
+        -ms-animation: fadeInUp 1s ease-in-out both;
+        animation: fadeInUp 1.2s ease-in-out both;
+        -webkit-animation-delay: .05s;
+        -moz-animation-delay: .05s;
+        -ms-animation-delay: .05s;
+        animation-delay: .05s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide img slide1">
+          <h3 class="page0h3 eventFadeindown">ANGEL IN US</h3>
+          <h1 class="page0h1 eventFadeinup">A CUP OF PERFECTION</h1>
+          <h2 class="page0h2 eventFadeinup">엔제리너스는 완벽한 커피한잔을 위한열정으로</br>
+            만든 완벽한 커피한잔을 선사합니다.</h2>
+        </div>
+        <div class="swiper-slide slide2">
+          <h3 class="page1h3">ANGEL IN US</h3>
+          <h1 class="page1h1">A CUP OF PERFECTION</h1>
+          <h2 class="page1h2">정성껏 준비한 원두를</br>
+              언제 어디서나 </h2>
+          </div>
+        <div class="swiper-slide slide3">
+          <h3 class="page2h3">ANGEL IN US</h3>
+          <h1 class="page2h1">A CUP OF PERFECTION</h1>
+          <h2 class="page2h2">여유로운 공간에서 즐기는</br>
+                              여유로운 커피 한잔</h2>
+           </div>
+        <div class="swiper-slide slide4">
+          <h3 class="page3h3">ANGEL IN US</h3>
+          <h1 class="page3h1">엔제리너스와 함께하는 길</h1> 
+          <div id="map"></div> 
+        </div>
+        
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div>
+    
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=39bda8e7b81721a2bd3c89a52ed53398"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const $paging0h3 = document.querySelector('.page0h3');
+      const $paging0h1 = document.querySelector('.page0h1');
+      const $paging0h2 = document.querySelector('.page0h2');
+      const $paging1h3 = document.querySelector('.page1h3');
+      const $paging1h1 = document.querySelector('.page1h1');
+      const $paging1h2 = document.querySelector('.page1h2');
+      const $paging2h3 = document.querySelector('.page2h3');
+      const $paging2h1 = document.querySelector('.page2h1');
+      const $paging2h2 = document.querySelector('.page2h2');
+      const $paging3h3 = document.querySelector('.page3h3');
+      const $paging3h1 = document.querySelector('.page3h1');
+      const $map = document.querySelector('#map');
+
+
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        mousewheel: true,
+        allowTouchMove:false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      //swiper.allowTouchMove = false;
+
+
+      
+      swiper.on('slideChange', e=>{
+          $paging0h3.classList.remove('eventFadeindown');
+          $paging0h1.classList.remove('eventFadeinup');
+          $paging0h2.classList.remove('eventFadeinup');
+          $paging1h3.classList.remove('eventFadeindown');
+          $paging1h1.classList.remove('eventFadeinup');
+          $paging1h2.classList.remove('eventFadeinup');
+          $paging2h3.classList.remove('eventFadeindown');
+          $paging2h1.classList.remove('eventFadeinup');
+          $paging2h2.classList.remove('eventFadeinup');
+          $paging3h3.classList.remove('eventFadeindown');
+          $paging3h1.classList.remove('eventFadeinup');
+          $map.classList.remove('eventFadeinup2');        
+        if(swiper.activeIndex===0){
+          $paging0h3.classList.add('eventFadeindown');
+          $paging0h1.classList.add('eventFadeinup');
+          $paging0h2.classList.add('eventFadeinup');
+          console.log(swiper.activeIndex);
+        }
+        if(swiper.activeIndex===1){
+          $paging1h3.classList.add('eventFadeindown');
+          $paging1h1.classList.add('eventFadeinup');
+          $paging1h2.classList.add('eventFadeinup');
+          console.log(swiper.activeIndex);
+        }
+        if(swiper.activeIndex===2){
+          $paging2h3.classList.add('eventFadeindown');
+          $paging2h1.classList.add('eventFadeinup');
+          $paging2h2.classList.add('eventFadeinup');
+          console.log(swiper.activeIndex);
+        }
+        if(swiper.activeIndex===3){
+          $paging3h3.classList.add('eventFadeindown');
+          $paging3h1.classList.add('eventFadeinup');
+          $map.classList.add('eventFadeinup2');        
+          console.log(swiper.activeIndex);
+        }
+      })
+  /*
+      swiper.on('slideChange', () => {
+        page0h3.classList. = '';
+        switch(swiper.activeIndex) {
+          case 1:
+            setTimeout(function() {
+            }, 100);            
+            break;
+        }
+      });      
+  */
+
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+    mapOption = { 
+        center: new kakao.maps.LatLng(35.868887040865935, 128.5971186493739), // 지도의 중심좌표
+        level: 7 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+var mapTypeControl = new kakao.maps.MapTypeControl();
+
+// 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+// kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+// 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+var zoomControl = new kakao.maps.ZoomControl();
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+ 
+// 마커를 표시할 위치와 title 객체 배열입니다 
+var positions = [
+    {
+        title: '엔제리너스 동성로점', 
+        latlng: new kakao.maps.LatLng(35.868887040865935, 128.5971186493739)
+    },
+    {
+        title: '엔제리너스 대구칠성시장역점', 
+        latlng: new kakao.maps.LatLng( 35.877098449825056,  128.60656218246228)
+    },
+    {
+        title: '엔제리너스 대구침산점', 
+        latlng: new kakao.maps.LatLng(35.88569373222266, 128.58634705910438)
+    },
+    {
+        title: '엔제리너스 대구북비산네거리점',
+        latlng: new kakao.maps.LatLng( 35.879308031278285, 128.57197126426215)
+    },
+    { 
+        title: '엔제리너스 대구중동점',
+        latlng: new kakao.maps.LatLng( 35.84646991853757, 128.6125185410454)
+    },
+    { 
+        title: '엔제리너스 동대구터미널점',
+        latlng: new kakao.maps.LatLng( 35.876888837042436, 128.62907912774563)
+    },
+    { 
+        title: '엔제리너스 대구내당점',
+        latlng: new kakao.maps.LatLng( 35.85993170331045, 128.56298484613748)
+    },
+    { 
+        title: '엔제리너스 정화팔레스 D/I점',
+        latlng: new kakao.maps.LatLng( 35.83766030784039, 128.612251664173)
+    },
+    
+];
+
+
+
+// 마커 이미지의 이미지 주소입니다
+var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 
+    
+for (var i = 0; i < positions.length; i ++) {
+    
+    // 마커 이미지의 이미지 크기 입니다
+    var imageSize = new kakao.maps.Size(24, 35); 
+    
+    // 마커 이미지를 생성합니다    
+    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
+    
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        map: map, // 마커를 표시할 지도
+        position: positions[i].latlng, // 마커를 표시할 위치
+        title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+        image : markerImage // 마커 이미지 
+    });
+} 
+
+
+
+
+  
+
+    </script>
+  </body>
+</html>

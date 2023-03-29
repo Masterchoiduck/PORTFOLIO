@@ -1,0 +1,36 @@
+{
+"CAMPING": [
+    {
+      "id": 1,
+      "title": "코베아 미니 테이블",
+      "img": "https://shop-phinf.pstatic.net/20220914_113/16631399386935UUB7_JPEG/64275827400480854_397641437.jpg?type=f296_296"
+    },
+    {
+      "id": 2,
+      "title": "코베아 하드캐리백",
+      "img": "https://shop-phinf.pstatic.net/20220816_199/1660641128957BMvfd_JPEG/61776974678610043_1397208666.jpg?type=f296_296",
+      "theme": "onesun"
+    },
+    {
+      "id": 3,
+      "title": "코베아 포터블체어",
+      "img": "https://shop-phinf.pstatic.net/20220816_127/1660640599142DnlNV_JPEG/61776426967893372_1196020451.jpg?type=f296_296",
+      "theme": "onesun"
+    },
+    {
+      "id": 4,
+      "title": "코베아 쿠션(침낭)",
+      "img": "https://shop-phinf.pstatic.net/20220919_47/1663545532227LeFoU_JPEG/64681315935242981_1790661838.jpg?type=f296_296"
+    },
+    {
+      "id": 5,
+      "title": "엔제리너스 캠핑머그 브라운",
+      "img": "https://shop-phinf.pstatic.net/20211215_294/163953919375787VOJ_PNG/40675092447598782_1841853820.png?type=f296_296"
+    },
+    {
+      "id": 6,
+      "title": "엔제리너스 캠핑머그 화이트",
+      "img": "https://shop-phinf.pstatic.net/20211215_235/16395394578786c0I9_PNG/40675356586792349_1277154117.png?type=f295_381"
+    }
+  ]
+}
